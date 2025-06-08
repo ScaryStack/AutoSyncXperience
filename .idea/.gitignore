@@ -36,6 +36,15 @@ Thumbs.db
 **/coverage/
 **/jacoco.exec
 
+# === Archivos individuales del proyecto ===
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
 # === ARCHIVOS DE BASE DE DATOS LOCAL ===
 **/*.h2.db
 **/*.mv.db
