@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Crea Controller de Cliente">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application_dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application_test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/controller/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/model/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/service/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Crea Model, Repository, Service, y Controller de Cliente en test">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +42,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ClienteApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/cliente/cliente/src/test/java/com/taller/cliente",
@@ -86,7 +74,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication">
+  <component name="RunManager" selected="Spring Boot.ClienteApplication">
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.auth.AuthApplication" />
@@ -180,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749412407714</updated>
-      <workItem from="1749412408863" duration="6142000" />
+      <workItem from="1749412408863" duration="6451000" />
     </task>
     <task id="LOCAL-00001" summary="Crea Model de Cliente">
       <option name="closed" value="true" />
@@ -238,7 +226,55 @@
       <option name="project" value="LOCAL" />
       <updated>1749421834027</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=".xml">
+      <option name="closed" value="true" />
+      <created>1749423567371</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423567371</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Agrega .xml a gitignore">
+      <option name="closed" value="true" />
+      <created>1749423603749</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423603749</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Agrega propiedades dev a perfil">
+      <option name="closed" value="true" />
+      <created>1749423620201</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423620201</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Agrega propiedades test a perfil">
+      <option name="closed" value="true" />
+      <created>1749423624600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423624600</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Agrega perfil test">
+      <option name="closed" value="true" />
+      <created>1749423694928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423694928</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Crea Model, Repository, Service, y Controller de Cliente en test">
+      <option name="closed" value="true" />
+      <created>1749423731622</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749423731622</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +288,12 @@
     <MESSAGE value="Crea Service de Cliente" />
     <MESSAGE value="Modifica Cliente por Optional&lt;Cliente&gt;" />
     <MESSAGE value="Crea Controller de Cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crea Controller de Cliente" />
+    <MESSAGE value=".xml" />
+    <MESSAGE value="Agrega .xml a gitignore" />
+    <MESSAGE value="Agrega propiedades dev a perfil" />
+    <MESSAGE value="Agrega propiedades test a perfil" />
+    <MESSAGE value="Agrega perfil test" />
+    <MESSAGE value="Crea Model, Repository, Service, y Controller de Cliente en test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crea Model, Repository, Service, y Controller de Cliente en test" />
   </component>
 </project>
