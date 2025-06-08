@@ -1,0 +1,46 @@
+# === ARCHIVOS DEL SISTEMA ===
+.DS_Store
+Thumbs.db
+
+# === CONFIGURACIÓN DE IDEs ===
+*.iml
+.idea/
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# === BUILD Y DEPENDENCIAS ===
+**/target/
+**/build/
+**/.mvn/
+**/.gradle/
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# === LOGS Y TEMPORALES ===
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# === ENTORNOS Y SECRETOS ===
+.env
+.env.*
+**/.env
+**/.env.*
+
+# === TEST Y REPORTES ===
+**/test-output/
+**/coverage/
+**/jacoco.exec
+
+# === ARCHIVOS DE BASE DE DATOS LOCAL ===
+**/*.h2.db
+**/*.mv.db
+
+# === OTROS ARCHIVOS PERSONALES ===
+*.local
+*.secret
+*.credentials
