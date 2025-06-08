@@ -1,4 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Crea Controller de Cliente">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application_dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application_test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2yEvAxorYnYs82jaYoqjYff7hA1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/cliente/cliente/src/test/java/com/taller/cliente",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\cliente\cliente\src\test\java\com\taller\cliente" />
+      <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\vehiculo\vehiculo\src\main\java\com\taller\vehiculo" />
+      <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\servicio\servicio\src\main\java\com\taller\servicio" />
+      <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\seguimiento\seguimiento\src\main\java\com\taller\seguimiento" />
+      <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\notificacion\notificacion\src\main\java\com\taller\notificacion" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoletaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boleta" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.boleta.BoletaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cita" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.cita.CitaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cliente" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.cliente.ClienteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DisponibilidadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="disponibilidad" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.disponibilidad.DisponibilidadApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacturaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="factura" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.factura.FacturaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HistorialApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="historial" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.historial.HistorialApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificacionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notificacion" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.notificacion.NotificacionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeguimientoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="seguimiento" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.seguimiento.SeguimientoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServicioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="servicio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.servicio.ServicioApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehiculoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="vehiculo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.vehiculo.VehiculoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="" />
+      <created>1749412407714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749412407714</updated>
+      <workItem from="1749412408863" duration="6142000" />
+    </task>
+    <task id="LOCAL-00001" summary="Crea Model de Cliente">
+      <option name="closed" value="true" />
+      <created>1749420587091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749420587091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cambio de Integer a Long por escalabilidad">
+      <option name="closed" value="true" />
+      <created>1749420793691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749420793691</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Crea Repository de Cliente">
+      <option name="closed" value="true" />
+      <created>1749420857462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749420857462</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Agrega anotacion repository">
+      <option name="closed" value="true" />
+      <created>1749420901113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749420901113</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Crea Service de Cliente">
+      <option name="closed" value="true" />
+      <created>1749421378380</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749421378380</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Modifica Cliente por Optional&lt;Cliente&gt;">
+      <option name="closed" value="true" />
+      <created>1749421705284</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749421705284</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Crea Controller de Cliente">
+      <option name="closed" value="true" />
+      <created>1749421834027</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749421834027</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Crea Model de Cliente" />
+    <MESSAGE value="Cambio de Integer a Long por escalabilidad" />
+    <MESSAGE value="Crea Repository de Cliente" />
+    <MESSAGE value="Agrega anotacion repository" />
+    <MESSAGE value="Crea Service de Cliente" />
+    <MESSAGE value="Modifica Cliente por Optional&lt;Cliente&gt;" />
+    <MESSAGE value="Crea Controller de Cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crea Controller de Cliente" />
+  </component>
 </project>
