@@ -30,17 +30,5 @@ public class ClienteService {
         clienteRepository.deleteById(id);
     }
 
-    public Cliente updateCliente(Long id, Cliente clienteDetails) {
-        return clienteRepository.findById(id).map(cliente -> {
-            cliente.setPrNombre(clienteDetails.getPrNombre());
-            cliente.setSegNombre(clienteDetails.getSegNombre());
-            cliente.setTerNombre(clienteDetails.getTerNombre());
-            cliente.setApPaterno(clienteDetails.getApPaterno());
-            cliente.setApMaterno(clienteDetails.getApMaterno());
-            cliente.setCorreo(clienteDetails.getCorreo());
-            cliente.setTelefono(clienteDetails.getTelefono());
-            return clienteRepository.save(cliente);
-        }).orElseThrow(() -> new RuntimeException("Cliente no encontrado con id " + id));
-    }
 
 }
