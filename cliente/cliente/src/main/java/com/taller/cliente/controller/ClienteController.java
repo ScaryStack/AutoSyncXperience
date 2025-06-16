@@ -23,9 +23,12 @@ public class ClienteController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Cliente> buscarClientePorId(@PathVariable Long id) {
-        return clienteService.getClienteById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        try{
+            Cliente c = clienteService.getClienteById(id);
+            return ResponseEntity.ok(c);
+        }catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @PostMapping
@@ -34,10 +37,18 @@ public class ClienteController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Cliente> updateCliente(@PathVariable Long id, @RequestBody Cliente clienteDetails) {
+    public ResponseEntity<Cliente> updateCliente(@PathVariable Long id, @RequestBody Cliente cliente) {
         try {
-            Cliente updatedCliente = clienteService.updateCliente(id, clienteDetails);
-            return ResponseEntity.ok(updatedCliente);
+            Cliente c = clienteService.getClienteById(id);
+            c.setIdCliente(id);
+            c.setPrNombre(cliente.getPrNombre());
+            c.setSegNombre(cliente.getSegNombre());
+            c.setTerNombre(cliente.getTerNombre());
+            c.setApPaterno(cliente.getApPaterno());
+            c.setApMaterno(cliente.getApMaterno());
+            c.setTelefono(cliente.getTelefono());
+            c.setCorreo(cliente.getCorreo());
+            return ResponseEntity.ok(c);
         } catch (RuntimeException e) {
             return ResponseEntity.notFound().build();
         }
