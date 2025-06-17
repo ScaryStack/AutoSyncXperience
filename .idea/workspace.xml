@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="agrega puerto de servidor y agrega guion para ejecución de archivo correspondiente">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put">
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/model/DataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/ClienteServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/controller/ClienteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/repository/ClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/test/java/com/taller/cliente/service/ClienteService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,14 +27,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ScaryStack&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ScaryStack/AutoSyncXperience.git&quot;,
+    &quot;accountId&quot;: &quot;62c90214-b0e2-4cb6-b846-4bb115b3faa2&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -40,34 +61,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ClienteApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/cliente/cliente/src/test/java/com/taller/cliente&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ClienteServiceTest.executor": "Run",
+    "JUnit.ClienteServiceTest.testFindAll.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ClienteApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/cliente/cliente/src/test/java/com/taller/cliente",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\cliente\cliente\src\test\java\com\taller\cliente" />
@@ -87,7 +110,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ClienteApplication">
+  <component name="RunManager" selected="JUnit.ClienteServiceTest">
+    <configuration name="ClienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cliente" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.taller.cliente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.taller.cliente" />
+      <option name="MAIN_CLASS_NAME" value="com.taller.cliente.ClienteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.auth.AuthApplication" />
@@ -165,6 +203,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClienteServiceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -185,7 +228,9 @@
       <workItem from="1749692164299" duration="2024000" />
       <workItem from="1749868651594" duration="271000" />
       <workItem from="1749870355265" duration="61000" />
-      <workItem from="1750098241690" duration="1057000" />
+      <workItem from="1750098241690" duration="3973000" />
+      <workItem from="1750132071315" duration="2544000" />
+      <workItem from="1750186530240" duration="2987000" />
     </task>
     <task id="LOCAL-00001" summary="Crea Model de Cliente">
       <option name="closed" value="true" />
@@ -307,11 +352,62 @@
       <option name="project" value="LOCAL" />
       <updated>1749424015394</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="unversioned files">
+      <option name="closed" value="true" />
+      <created>1750099384377</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1750099384377</updated>
+    </task>
+    <task id="LOCAL-00017" summary="modifica estructura de pom">
+      <option name="closed" value="true" />
+      <created>1750099409554</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1750099409554</updated>
+    </task>
+    <task id="LOCAL-00018" summary=".xml">
+      <option name="closed" value="true" />
+      <created>1750099415238</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1750099415238</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Elimina metodo updateCliente por redundancia en codigo">
+      <option name="closed" value="true" />
+      <created>1750099582098</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1750099582098</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put">
+      <option name="closed" value="true" />
+      <created>1750103721942</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1750103721942</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Crea Model de Cliente" />
@@ -326,8 +422,12 @@
     <MESSAGE value="Agrega propiedades test a perfil" />
     <MESSAGE value="Agrega perfil test" />
     <MESSAGE value="Crea Model, Repository, Service, y Controller de Cliente en test" />
-    <MESSAGE value=".xml" />
     <MESSAGE value="agrega puerto de servidor y agrega guion para ejecución de archivo correspondiente" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrega puerto de servidor y agrega guion para ejecución de archivo correspondiente" />
+    <MESSAGE value="unversioned files" />
+    <MESSAGE value="modifica estructura de pom" />
+    <MESSAGE value=".xml" />
+    <MESSAGE value="Elimina metodo updateCliente por redundancia en codigo" />
+    <MESSAGE value="Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put" />
   </component>
 </project>
