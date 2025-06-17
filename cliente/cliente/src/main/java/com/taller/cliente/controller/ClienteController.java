@@ -22,7 +22,7 @@ public class ClienteController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Cliente> buscarClientePorId(@PathVariable Long id) {
+    public ResponseEntity<Cliente> buscarClientePorId(@PathVariable Integer id) {
         try{
             Cliente c = clienteService.getClienteById(id);
             return ResponseEntity.ok(c);
@@ -37,7 +37,7 @@ public class ClienteController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Cliente> updateCliente(@PathVariable Long id, @RequestBody Cliente cliente) {
+    public ResponseEntity<Cliente> updateCliente(@PathVariable Integer id, @RequestBody Cliente cliente) {
         try {
             Cliente c = clienteService.getClienteById(id);
             c.setIdCliente(id);
@@ -55,7 +55,7 @@ public class ClienteController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCliente(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteCliente(@PathVariable Integer id) {
         clienteService.deleteCliente(id);
         return ResponseEntity.noContent().build();
     }
