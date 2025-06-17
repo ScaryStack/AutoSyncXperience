@@ -14,7 +14,7 @@ public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCliente;
+    private Integer idCliente;
 
     @Column(nullable = false)
     private String prNombre;
@@ -35,5 +35,5 @@ public class Cliente {
     private String correo;
 
     @Column(nullable = false)
-    private String telefono;
+    private Integer telefono;
 }
