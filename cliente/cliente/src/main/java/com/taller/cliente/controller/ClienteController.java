@@ -41,11 +41,8 @@ public class ClienteController {
         try {
             Cliente c = clienteService.getClienteById(id);
             c.setIdCliente(id);
-            c.setPrNombre(cliente.getPrNombre());
-            c.setSegNombre(cliente.getSegNombre());
-            c.setTerNombre(cliente.getTerNombre());
-            c.setApPaterno(cliente.getApPaterno());
-            c.setApMaterno(cliente.getApMaterno());
+            c.setNombres(cliente.getNombres());
+            c.setApellidos(cliente.getApellidos());
             c.setTelefono(cliente.getTelefono());
             c.setCorreo(cliente.getCorreo());
             return ResponseEntity.ok(c);

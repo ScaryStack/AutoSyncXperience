@@ -4,49 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Agrega application.properties a microservicios">
-      <change afterPath="$PROJECT_DIR$/auth/auth/src/main/java/com/taller/auth/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/auth/src/main/java/com/taller/auth/model/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/auth/src/main/java/com/taller/auth/repository/AuthRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/auth/src/main/java/com/taller/auth/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cita/cita/src/main/java/com/taller/cita/controller/CitaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cita/cita/src/main/java/com/taller/cita/model/Cita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cita/cita/src/main/java/com/taller/cita/model/DataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cita/cita/src/main/java/com/taller/cita/repository/CitaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cita/cita/src/main/java/com/taller/cita/service/CitaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disponibilidad/disponibilidad/src/main/java/com/taller/disponibilidad/controller/DisponibilidadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disponibilidad/disponibilidad/src/main/java/com/taller/disponibilidad/model/Disponibilidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disponibilidad/disponibilidad/src/main/java/com/taller/disponibilidad/repository/DisponibilidadRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disponibilidad/disponibilidad/src/main/java/com/taller/disponibilidad/service/DisponibilidadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factura/factura/src/main/java/com/taller/factura/controller/FacturaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factura/factura/src/main/java/com/taller/factura/model/Factura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factura/factura/src/main/java/com/taller/factura/repository/FacturaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factura/factura/src/main/java/com/taller/factura/service/FacturaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/historial/historial/src/main/java/com/taller/historial/controller/HistorialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/historial/historial/src/main/java/com/taller/historial/model/Historial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/historial/historial/src/main/java/com/taller/historial/repository/HistorialRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/historial/historial/src/main/java/com/taller/historial/service/HistorialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notificacion/notificacion/src/main/java/com/taller/notificacion/controller/NotificacionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notificacion/notificacion/src/main/java/com/taller/notificacion/model/Notificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notificacion/notificacion/src/main/java/com/taller/notificacion/repository/NotificacionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notificacion/notificacion/src/main/java/com/taller/notificacion/service/NotificacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seguimiento/seguimiento/src/main/java/com/taller/seguimiento/controller/SeguimientoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seguimiento/seguimiento/src/main/java/com/taller/seguimiento/model/Seguimiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seguimiento/seguimiento/src/main/java/com/taller/seguimiento/repository/SeguimientoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seguimiento/seguimiento/src/main/java/com/taller/seguimiento/service/SeguimientoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servicio/servicio/src/main/java/com/taller/servicio/controller/ServicioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servicio/servicio/src/main/java/com/taller/servicio/model/Servicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servicio/servicio/src/main/java/com/taller/servicio/repository/ServicioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servicio/servicio/src/main/java/com/taller/servicio/service/ServicioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/controller/VehiculoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/model/Vehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/repository/VehiculoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Estructuración de Model, Repository, Service y Controller de cada microservicio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cita/cita/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cita/cita/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/java/com/taller/cliente/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/cliente/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,37 +65,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ClienteServiceTest.executor": "Run",
-    "JUnit.ClienteServiceTest.testFindAll.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CitaApplication.executor": "Run",
-    "Spring Boot.ClienteApplication.executor": "Run",
-    "git-widget-placeholder": "patricio",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/auth/auth/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ClienteServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteServiceTest.testFindAll.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CitaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ClienteApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;patricio&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/auth/auth/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Programas\Frameworks\SpringBoot\AutoSyncXperience\auth\auth\src\main\resources" />
@@ -283,7 +242,8 @@
       <workItem from="1750646014957" duration="4330000" />
       <workItem from="1750700253918" duration="11057000" />
       <workItem from="1750747378046" duration="2358000" />
-      <workItem from="1750806570224" duration="1112000" />
+      <workItem from="1750806570224" duration="1355000" />
+      <workItem from="1750820822105" duration="1086000" />
     </task>
     <task id="LOCAL-00001" summary="Crea Model de Cliente">
       <option name="closed" value="true" />
@@ -461,7 +421,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750453804472</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Estructuración de Model, Repository, Service y Controller de cada microservicio">
+      <option name="closed" value="true" />
+      <created>1750807770729</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1750807770729</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,6 +467,7 @@
     <MESSAGE value="Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put" />
     <MESSAGE value="Modifica pom para mayor entendimiento" />
     <MESSAGE value="Agrega application.properties a microservicios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agrega application.properties a microservicios" />
+    <MESSAGE value="Estructuración de Model, Repository, Service y Controller de cada microservicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estructuración de Model, Repository, Service y Controller de cada microservicio" />
   </component>
 </project>

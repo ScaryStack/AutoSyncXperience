@@ -17,7 +17,7 @@ public class Vehiculo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idVehiculo;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String patente;
 
     @Column(nullable = false)
