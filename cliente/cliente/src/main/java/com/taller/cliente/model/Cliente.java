@@ -17,19 +17,10 @@ public class Cliente {
     private Integer idCliente;
 
     @Column(nullable = false)
-    private String prNombre;
+    private String nombres;
 
     @Column(nullable = false)
-    private String segNombre;
-
-    @Column(nullable = true)
-    private String terNombre;
-
-    @Column(nullable = false)
-    private String apPaterno;
-
-    @Column(nullable = false)
-    private String apMaterno;
+    private String apellidos;
 
     @Column(nullable = false)
     private String correo;
