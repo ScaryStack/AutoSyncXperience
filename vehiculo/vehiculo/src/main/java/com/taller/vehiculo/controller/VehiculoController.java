@@ -1,6 +1,7 @@
 package com.taller.vehiculo.controller;
 
 
+import com.taller.vehiculo.dto.RespuestaDTO;
 import com.taller.vehiculo.model.Vehiculo;
 import com.taller.vehiculo.service.VehiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,20 +22,10 @@ public class VehiculoController {
         return vehiculoService.getAllVehiculos();
     }
 
-    @GetMapping("/cliente/{idCliente}")
-    public ResponseEntity<List<Vehiculo>> obtenerPorIdCliente(@PathVariable Integer idCliente) {
-        List<Vehiculo> vehiculos = vehiculoService.obtenerVehiculosPorCliente(idCliente);
-        return ResponseEntity.ok(vehiculos);
-    }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Vehiculo> obtenerVehiculo(@PathVariable Integer id) {
-        try {
-            Vehiculo v = vehiculoService.getVehiculoById(id);
-            return ResponseEntity.ok(v);
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+    public RespuestaDTO getVehiculoById (@PathVariable Integer id) {
+        return vehiculoService.getClienteById(id);
     }
 
     @PostMapping
