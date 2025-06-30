@@ -1,11 +1,8 @@
 package com.taller.vehiculo.service;
 
-import com.taller.vehiculo.dto.ClienteDTO;
-import com.taller.vehiculo.dto.RespuestaDTO;
 import com.taller.vehiculo.model.Vehiculo;
 import com.taller.vehiculo.repository.VehiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -35,20 +32,4 @@ public class VehiculoService {
         vehiculoRepository.deleteById(id);
     }
 
-    public RespuestaDTO getClienteById(Integer id) {
-        RespuestaDTO respuestaDTO = new RespuestaDTO();
-
-        Vehiculo vehiculo = new Vehiculo();
-        vehiculo = vehiculoRepository.findById(id).get();
-
-        ResponseEntity<ClienteDTO> responseEntity = restTemplate.getForEntity("http://localhost:8083/api/v3/clientes/" + vehiculo.getIdCliente(),
-                ClienteDTO.class);
-
-        ClienteDTO clienteDTO = responseEntity.getBody();
-
-        respuestaDTO.setVehiculo(vehiculo);
-        respuestaDTO.setClienteDTO(clienteDTO);
-
-        return respuestaDTO;
-    }
 }

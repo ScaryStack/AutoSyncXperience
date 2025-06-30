@@ -1,0 +1,55 @@
+Index: vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.taller.vehiculo.service;\r\n\r\nimport com.taller.vehiculo.dto.ClienteDTO;\r\nimport com.taller.vehiculo.dto.RespuestaDTO;\r\nimport com.taller.vehiculo.model.Vehiculo;\r\nimport com.taller.vehiculo.repository.VehiculoRepository;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.http.ResponseEntity;\r\nimport org.springframework.stereotype.Service;\r\nimport org.springframework.web.client.RestTemplate;\r\n\r\nimport java.util.List;\r\n\r\n@Service\r\npublic class VehiculoService {\r\n\r\n    @Autowired\r\n    private VehiculoRepository vehiculoRepository;\r\n\r\n    private final RestTemplate restTemplate = new RestTemplate();\r\n\r\n    public List<Vehiculo> getAllVehiculos() {\r\n        return vehiculoRepository.findAll();\r\n    }\r\n\r\n    public Vehiculo getVehiculoById(Integer id) {\r\n        return vehiculoRepository.findById(id).get();\r\n    }\r\n\r\n    public Vehiculo saveVehiculo(Vehiculo vehiculo) {\r\n        return vehiculoRepository.save(vehiculo);\r\n    }\r\n\r\n    public void deleteVehiculo(Integer id) {\r\n        vehiculoRepository.deleteById(id);\r\n    }\r\n\r\n    public RespuestaDTO getClienteById(Integer id) {\r\n        RespuestaDTO respuestaDTO = new RespuestaDTO();\r\n\r\n        Vehiculo vehiculo = new Vehiculo();\r\n        vehiculo = vehiculoRepository.findById(id).get();\r\n\r\n        ResponseEntity<ClienteDTO> responseEntity = restTemplate.getForEntity(\"http://localhost:8083/api/v3/clientes/\" + vehiculo.getIdCliente(),\r\n                ClienteDTO.class);\r\n\r\n        ClienteDTO clienteDTO = responseEntity.getBody();\r\n\r\n        respuestaDTO.setVehiculo(vehiculo);\r\n        respuestaDTO.setClienteDTO(clienteDTO);\r\n\r\n        return respuestaDTO;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java b/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java
+--- a/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
++++ b/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java	(date 1751242743521)
+@@ -1,24 +1,17 @@
+ package com.taller.vehiculo.service;
+ 
+-import com.taller.vehiculo.dto.ClienteDTO;
+-import com.taller.vehiculo.dto.RespuestaDTO;
+ import com.taller.vehiculo.model.Vehiculo;
+ import com.taller.vehiculo.repository.VehiculoRepository;
+ import org.springframework.beans.factory.annotation.Autowired;
+-import org.springframework.http.ResponseEntity;
+ import org.springframework.stereotype.Service;
+-import org.springframework.web.client.RestTemplate;
+ 
+ import java.util.List;
+ 
+ @Service
+ public class VehiculoService {
+-
+     @Autowired
+     private VehiculoRepository vehiculoRepository;
+ 
+-    private final RestTemplate restTemplate = new RestTemplate();
+-
+     public List<Vehiculo> getAllVehiculos() {
+         return vehiculoRepository.findAll();
+     }
+@@ -34,21 +27,4 @@
+     public void deleteVehiculo(Integer id) {
+         vehiculoRepository.deleteById(id);
+     }
+-
+-    public RespuestaDTO getClienteById(Integer id) {
+-        RespuestaDTO respuestaDTO = new RespuestaDTO();
+-
+-        Vehiculo vehiculo = new Vehiculo();
+-        vehiculo = vehiculoRepository.findById(id).get();
+-
+-        ResponseEntity<ClienteDTO> responseEntity = restTemplate.getForEntity("http://localhost:8083/api/v3/clientes/" + vehiculo.getIdCliente(),
+-                ClienteDTO.class);
+-
+-        ClienteDTO clienteDTO = responseEntity.getBody();
+-
+-        respuestaDTO.setVehiculo(vehiculo);
+-        respuestaDTO.setClienteDTO(clienteDTO);
+-
+-        return respuestaDTO;
+-    }
+ }

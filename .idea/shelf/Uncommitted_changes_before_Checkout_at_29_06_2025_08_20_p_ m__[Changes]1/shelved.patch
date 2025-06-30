@@ -1,0 +1,293 @@
+Index: vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/ClienteDTO.java
+===================================================================
+diff --git a/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/ClienteDTO.java b/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/ClienteDTO.java
+deleted file mode 100644
+--- a/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/ClienteDTO.java	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
++++ /dev/null	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
+@@ -1,17 +0,0 @@
+-package com.taller.vehiculo.dto;
+-
+-
+-import lombok.AllArgsConstructor;
+-import lombok.Data;
+-import lombok.NoArgsConstructor;
+-
+-@Data
+-@AllArgsConstructor
+-@NoArgsConstructor
+-public class ClienteDTO {
+-    private Integer idCliente;
+-    private String nombres;
+-    private String apellidos;
+-    private String correo;
+-    private String telefono;
+-}
+Index: vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/RespuestaDTO.java
+===================================================================
+diff --git a/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/RespuestaDTO.java b/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/RespuestaDTO.java
+deleted file mode 100644
+--- a/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/dto/RespuestaDTO.java	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
++++ /dev/null	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
+@@ -1,16 +0,0 @@
+-package com.taller.vehiculo.dto;
+-
+-import com.taller.vehiculo.model.Vehiculo;
+-import lombok.AllArgsConstructor;
+-import lombok.Data;
+-import lombok.NoArgsConstructor;
+-
+-
+-@Data
+-@AllArgsConstructor
+-@NoArgsConstructor
+-public class RespuestaDTO {
+-
+-    private Vehiculo vehiculo;
+-    private ClienteDTO clienteDTO;
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8035511f-ab8e-4315-a1d7-f6e8cd392cab\" name=\"Changes\" comment=\"Estructuración de Model, Repository, Service y Controller de cada microservicio\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"benjamin\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;ScaryStack&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/ScaryStack/AutoSyncXperience.git&quot;,\r\n    &quot;accountId&quot;: &quot;62c90214-b0e2-4cb6-b846-4bb115b3faa2&quot;\r\n  },\r\n  &quot;recentNewPullRequestHead&quot;: {\r\n    &quot;server&quot;: {\r\n      &quot;useHttp&quot;: false,\r\n      &quot;host&quot;: &quot;github.com&quot;,\r\n      &quot;port&quot;: null,\r\n      &quot;suffix&quot;: null\r\n    },\r\n    &quot;owner&quot;: &quot;ScaryStack&quot;,\r\n    &quot;repository&quot;: &quot;AutoSyncXperience&quot;\r\n  },\r\n  &quot;editorReviewEnabled&quot;: false\r\n}</component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2yEvAxorYnYs82jaYoqjYff7hA1\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;JUnit.ClienteServiceTest.executor&quot;: &quot;Run&quot;,\r\n    &quot;JUnit.ClienteServiceTest.testFindAll.executor&quot;: &quot;Run&quot;,\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,\r\n    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,\r\n    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,\r\n    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;Spring Boot.CitaApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;Spring Boot.ClienteApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;patricio&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/auth/auth/src/main/resources&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql_aurora&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"E:\\Programas\\Frameworks\\SpringBoot\\AutoSyncXperience\\auth\\auth\\src\\main\\resources\" />\r\n      <recent name=\"E:\\Programas\\Frameworks\\SpringBoot\\AutoSyncXperience\\boleta\\boleta\\src\\main\\resources\" />\r\n      <recent name=\"E:\\Programas\\Frameworks\\SpringBoot\\AutoSyncXperience\\cita\\cita\\src\\main\\resources\" />\r\n      <recent name=\"E:\\Programas\\Frameworks\\SpringBoot\\AutoSyncXperience\\disponibilidad\\disponibilidad\\src\\main\\resources\" />\r\n      <recent name=\"E:\\Programas\\Frameworks\\SpringBoot\\AutoSyncXperience\\factura\\factura\\src\\main\\resources\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"configurationTypes\">\r\n      <set>\r\n        <option value=\"KtorApplicationConfigurationType\" />\r\n        <option value=\"MicronautRunConfigurationType\" />\r\n        <option value=\"QuarkusRunConfigurationType\" />\r\n        <option value=\"SpringBootApplicationConfigurationType\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.CitaApplication\">\r\n    <configuration name=\"ClienteServiceTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"cliente\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.taller.cliente.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.taller.cliente\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.taller.cliente.ClienteServiceTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"AuthApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"auth\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.auth.AuthApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"BoletaApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"boleta\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.boleta.BoletaApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CitaApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"cita\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.cita.CitaApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ClienteApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"cliente\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.cliente.ClienteApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"DisponibilidadApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"disponibilidad\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.disponibilidad.DisponibilidadApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"FacturaApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"factura\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.factura.FacturaApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"HistorialApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"historial\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.historial.HistorialApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"NotificacionApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"notificacion\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.notificacion.NotificacionApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SeguimientoApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"seguimiento\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.seguimiento.SeguimientoApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ServicioApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"servicio\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.servicio.ServicioApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"VehiculoApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"vehiculo\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.taller.vehiculo.VehiculoApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.ClienteServiceTest\" />\r\n        <item itemvalue=\"JUnit.ClienteServiceTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8035511f-ab8e-4315-a1d7-f6e8cd392cab\" name=\"Changes\" comment=\"\" />\r\n      <created>1749412407714</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1749412407714</updated>\r\n      <workItem from=\"1749412408863\" duration=\"10582000\" />\r\n      <workItem from=\"1749692164299\" duration=\"2024000\" />\r\n      <workItem from=\"1749868651594\" duration=\"271000\" />\r\n      <workItem from=\"1749870355265\" duration=\"61000\" />\r\n      <workItem from=\"1750098241690\" duration=\"3973000\" />\r\n      <workItem from=\"1750132071315\" duration=\"2544000\" />\r\n      <workItem from=\"1750186530240\" duration=\"2987000\" />\r\n      <workItem from=\"1750213000373\" duration=\"318000\" />\r\n      <workItem from=\"1750451999725\" duration=\"4398000\" />\r\n      <workItem from=\"1750646014957\" duration=\"4330000\" />\r\n      <workItem from=\"1750700253918\" duration=\"11057000\" />\r\n      <workItem from=\"1750747378046\" duration=\"2358000\" />\r\n      <workItem from=\"1750806570224\" duration=\"1355000\" />\r\n      <workItem from=\"1750820822105\" duration=\"1086000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Crea Model de Cliente\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749420587091</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749420587091</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Cambio de Integer a Long por escalabilidad\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749420793691</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749420793691</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Crea Repository de Cliente\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749420857462</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749420857462</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Agrega anotacion repository\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749420901113</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749420901113</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Crea Service de Cliente\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749421378380</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749421378380</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Modifica Cliente por Optional&lt;Cliente&gt;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749421705284</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749421705284</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Crea Controller de Cliente\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749421834027</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749421834027</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\".xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423567371</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423567371</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Agrega .xml a gitignore\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423603749</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423603749</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Agrega propiedades dev a perfil\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423620201</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423620201</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Agrega propiedades test a perfil\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423624600</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423624600</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Agrega perfil test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423694928</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423694928</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Crea Model, Repository, Service, y Controller de Cliente en test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423731622</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423731622</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\".xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749423965139</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749423965139</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"agrega puerto de servidor y agrega guion para ejecución de archivo correspondiente\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1749424015394</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1749424015394</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"unversioned files\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750099384377</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750099384377</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"modifica estructura de pom\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750099409554</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750099409554</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\".xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750099415238</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750099415238</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Elimina metodo updateCliente por redundancia en codigo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750099582098</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750099582098</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750103721942</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750103721942</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Modifica pom para mayor entendimiento\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750191193719</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750191193719</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Agrega application.properties a microservicios\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750453804472</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750453804472</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Estructuración de Model, Repository, Service y Controller de cada microservicio\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750807770729</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750807770729</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"24\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Crea Model de Cliente\" />\r\n    <MESSAGE value=\"Cambio de Integer a Long por escalabilidad\" />\r\n    <MESSAGE value=\"Crea Repository de Cliente\" />\r\n    <MESSAGE value=\"Agrega anotacion repository\" />\r\n    <MESSAGE value=\"Crea Service de Cliente\" />\r\n    <MESSAGE value=\"Modifica Cliente por Optional&lt;Cliente&gt;\" />\r\n    <MESSAGE value=\"Crea Controller de Cliente\" />\r\n    <MESSAGE value=\"Agrega .xml a gitignore\" />\r\n    <MESSAGE value=\"Agrega propiedades dev a perfil\" />\r\n    <MESSAGE value=\"Agrega propiedades test a perfil\" />\r\n    <MESSAGE value=\"Agrega perfil test\" />\r\n    <MESSAGE value=\"Crea Model, Repository, Service, y Controller de Cliente en test\" />\r\n    <MESSAGE value=\"agrega puerto de servidor y agrega guion para ejecución de archivo correspondiente\" />\r\n    <MESSAGE value=\"unversioned files\" />\r\n    <MESSAGE value=\"modifica estructura de pom\" />\r\n    <MESSAGE value=\".xml\" />\r\n    <MESSAGE value=\"Elimina metodo updateCliente por redundancia en codigo\" />\r\n    <MESSAGE value=\"Modifica Metodo Get para mayor entendimiento en conjunto con metodo Put\" />\r\n    <MESSAGE value=\"Modifica pom para mayor entendimiento\" />\r\n    <MESSAGE value=\"Agrega application.properties a microservicios\" />\r\n    <MESSAGE value=\"Estructuración de Model, Repository, Service y Controller de cada microservicio\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Estructuración de Model, Repository, Service y Controller de cada microservicio\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
++++ b/.idea/workspace.xml	(date 1751242375578)
+@@ -4,8 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Estructuración de Model, Repository, Service y Controller de cada microservicio">
++    <list default="true" id="8035511f-ab8e-4315-a1d7-f6e8cd392cab" name="Changes" comment="Modifica setters de nombres y apellidos">
++      <change afterPath="$PROJECT_DIR$/vehiculo/vehiculo/src/test/java/com/taller/vehiculo/VehiculoServiceTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculo/vehiculo/src/main/java/com/taller/vehiculo/service/VehiculoService.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -69,6 +72,7 @@
+   &quot;keyToString&quot;: {
+     &quot;JUnit.ClienteServiceTest.executor&quot;: &quot;Run&quot;,
+     &quot;JUnit.ClienteServiceTest.testFindAll.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.VehiculoServiceTest.executor&quot;: &quot;Run&quot;,
+     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+@@ -79,6 +83,8 @@
+     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+     &quot;Spring Boot.CitaApplication.executor&quot;: &quot;Run&quot;,
+     &quot;Spring Boot.ClienteApplication.executor&quot;: &quot;Run&quot;,
++    &quot;Spring Boot.DisponibilidadApplication.executor&quot;: &quot;Run&quot;,
++    &quot;Spring Boot.VehiculoApplication.executor&quot;: &quot;Run&quot;,
+     &quot;git-widget-placeholder&quot;: &quot;patricio&quot;,
+     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+     &quot;last_opened_file_path&quot;: &quot;E:/Programas/Frameworks/SpringBoot/AutoSyncXperience/auth/auth/src/main/resources&quot;,
+@@ -88,6 +94,7 @@
+     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+   &quot;keyToStringList&quot;: {
+@@ -115,7 +122,7 @@
+       </set>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Spring Boot.CitaApplication">
++  <component name="RunManager" selected="Spring Boot.ClienteApplication">
+     <configuration name="ClienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="cliente" />
+       <extension name="coverage">
+@@ -131,6 +138,21 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="VehiculoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="vehiculo" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.taller.vehiculo.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.taller.vehiculo" />
++      <option name="MAIN_CLASS_NAME" value="com.taller.vehiculo.VehiculoServiceTest" />
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+       <module name="auth" />
+       <option name="SPRING_BOOT_MAIN_CLASS" value="com.taller.auth.AuthApplication" />
+@@ -210,6 +232,7 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="JUnit.VehiculoServiceTest" />
+         <item itemvalue="JUnit.ClienteServiceTest" />
+         <item itemvalue="JUnit.ClienteServiceTest" />
+       </list>
+@@ -243,7 +266,11 @@
+       <workItem from="1750700253918" duration="11057000" />
+       <workItem from="1750747378046" duration="2358000" />
+       <workItem from="1750806570224" duration="1355000" />
+-      <workItem from="1750820822105" duration="1086000" />
++      <workItem from="1750820822105" duration="14046000" />
++      <workItem from="1750837645789" duration="173000" />
++      <workItem from="1750881275355" duration="104000" />
++      <workItem from="1750903289101" duration="10358000" />
++      <workItem from="1751238514592" duration="3107000" />
+     </task>
+     <task id="LOCAL-00001" summary="Crea Model de Cliente">
+       <option name="closed" value="true" />
+@@ -429,7 +456,87 @@
+       <option name="project" value="LOCAL" />
+       <updated>1750807770729</updated>
+     </task>
+-    <option name="localTasksCounter" value="24" />
++    <task id="LOCAL-00024" summary="Agrega dependencia a DataFaker">
++      <option name="closed" value="true" />
++      <created>1750822650432</created>
++      <option name="number" value="00024" />
++      <option name="presentableId" value="LOCAL-00024" />
++      <option name="project" value="LOCAL" />
++      <updated>1750822650432</updated>
++    </task>
++    <task id="LOCAL-00025" summary="Indica valor unico en patente">
++      <option name="closed" value="true" />
++      <created>1750830695564</created>
++      <option name="number" value="00025" />
++      <option name="presentableId" value="LOCAL-00025" />
++      <option name="project" value="LOCAL" />
++      <updated>1750830695564</updated>
++    </task>
++    <task id="LOCAL-00026" summary="Crea DataLoader de Vehiculo">
++      <option name="closed" value="true" />
++      <created>1750830707824</created>
++      <option name="number" value="00026" />
++      <option name="presentableId" value="LOCAL-00026" />
++      <option name="project" value="LOCAL" />
++      <updated>1750830707824</updated>
++    </task>
++    <task id="LOCAL-00027" summary="Modifica por simplicidad nombres y apellidos">
++      <option name="closed" value="true" />
++      <created>1750832529273</created>
++      <option name="number" value="00027" />
++      <option name="presentableId" value="LOCAL-00027" />
++      <option name="project" value="LOCAL" />
++      <updated>1750832529273</updated>
++    </task>
++    <task id="LOCAL-00028" summary="Modifica por simplicidad nombres y apellidos">
++      <option name="closed" value="true" />
++      <created>1750832604039</created>
++      <option name="number" value="00028" />
++      <option name="presentableId" value="LOCAL-00028" />
++      <option name="project" value="LOCAL" />
++      <updated>1750832604039</updated>
++    </task>
++    <task id="LOCAL-00029" summary="Modifica por simplicidad nombres y apellidos">
++      <option name="closed" value="true" />
++      <created>1750832642564</created>
++      <option name="number" value="00029" />
++      <option name="presentableId" value="LOCAL-00029" />
++      <option name="project" value="LOCAL" />
++      <updated>1750832642564</updated>
++    </task>
++    <task id="LOCAL-00030" summary="Crea DataLoader de Disponibilidad">
++      <option name="closed" value="true" />
++      <created>1750833237876</created>
++      <option name="number" value="00030" />
++      <option name="presentableId" value="LOCAL-00030" />
++      <option name="project" value="LOCAL" />
++      <updated>1750833237876</updated>
++    </task>
++    <task id="LOCAL-00031" summary="Crea y ajusta codigo a DTOS para mostrar datos de cliente">
++      <option name="closed" value="true" />
++      <created>1750881345561</created>
++      <option name="number" value="00031" />
++      <option name="presentableId" value="LOCAL-00031" />
++      <option name="project" value="LOCAL" />
++      <updated>1750881345561</updated>
++    </task>
++    <task id="LOCAL-00032" summary="Cambia puerto de alojamiento">
++      <option name="closed" value="true" />
++      <created>1750881361927</created>
++      <option name="number" value="00032" />
++      <option name="presentableId" value="LOCAL-00032" />
++      <option name="project" value="LOCAL" />
++      <updated>1750881361927</updated>
++    </task>
++    <task id="LOCAL-00033" summary="Modifica setters de nombres y apellidos">
++      <option name="closed" value="true" />
++      <created>1750907478616</created>
++      <option name="number" value="00033" />
++      <option name="presentableId" value="LOCAL-00033" />
++      <option name="project" value="LOCAL" />
++      <updated>1750907478616</updated>
++    </task>
++    <option name="localTasksCounter" value="34" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -447,10 +554,6 @@
+     </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="Crea Model de Cliente" />
+-    <MESSAGE value="Cambio de Integer a Long por escalabilidad" />
+-    <MESSAGE value="Crea Repository de Cliente" />
+-    <MESSAGE value="Agrega anotacion repository" />
+     <MESSAGE value="Crea Service de Cliente" />
+     <MESSAGE value="Modifica Cliente por Optional&lt;Cliente&gt;" />
+     <MESSAGE value="Crea Controller de Cliente" />
+@@ -468,6 +571,14 @@
+     <MESSAGE value="Modifica pom para mayor entendimiento" />
+     <MESSAGE value="Agrega application.properties a microservicios" />
+     <MESSAGE value="Estructuración de Model, Repository, Service y Controller de cada microservicio" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Estructuración de Model, Repository, Service y Controller de cada microservicio" />
++    <MESSAGE value="Agrega dependencia a DataFaker" />
++    <MESSAGE value="Indica valor unico en patente" />
++    <MESSAGE value="Crea DataLoader de Vehiculo" />
++    <MESSAGE value="Modifica por simplicidad nombres y apellidos" />
++    <MESSAGE value="Crea DataLoader de Disponibilidad" />
++    <MESSAGE value="Crea y ajusta codigo a DTOS para mostrar datos de cliente" />
++    <MESSAGE value="Cambia puerto de alojamiento" />
++    <MESSAGE value="Modifica setters de nombres y apellidos" />
++    <option name="LAST_COMMIT_MESSAGE" value="Modifica setters de nombres y apellidos" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile default=\"true\" name=\"Default\" enabled=\"true\" />\r\n      <profile name=\"Annotation profile for seguimiento\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar\" />\r\n        </processorPath>\r\n        <module name=\"cliente\" />\r\n        <module name=\"disponibilidad\" />\r\n        <module name=\"factura\" />\r\n        <module name=\"servicio\" />\r\n        <module name=\"seguimiento\" />\r\n        <module name=\"auth\" />\r\n        <module name=\"historial\" />\r\n        <module name=\"boleta\" />\r\n        <module name=\"vehiculo\" />\r\n        <module name=\"cita\" />\r\n        <module name=\"notificacion\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"auth\" options=\"-parameters\" />\r\n      <module name=\"boleta\" options=\"-parameters\" />\r\n      <module name=\"cita\" options=\"-parameters\" />\r\n      <module name=\"cliente\" options=\"-parameters\" />\r\n      <module name=\"disponibilidad\" options=\"-parameters\" />\r\n      <module name=\"factura\" options=\"-parameters\" />\r\n      <module name=\"historial\" options=\"-parameters\" />\r\n      <module name=\"notificacion\" options=\"-parameters\" />\r\n      <module name=\"seguimiento\" options=\"-parameters\" />\r\n      <module name=\"servicio\" options=\"-parameters\" />\r\n      <module name=\"vehiculo\" options=\"-parameters\" />\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 24222834538d1d7b3b012efc98185c7938d7279e)
++++ b/.idea/compiler.xml	(date 1750822652742)
+@@ -3,7 +3,7 @@
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+       <profile default="true" name="Default" enabled="true" />
+-      <profile name="Annotation profile for seguimiento" enabled="true">
++      <profile name="Annotation profile for vehiculo" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+@@ -12,8 +12,8 @@
+         </processorPath>
+         <module name="cliente" />
+         <module name="disponibilidad" />
+-        <module name="factura" />
+         <module name="servicio" />
++        <module name="factura" />
+         <module name="seguimiento" />
+         <module name="auth" />
+         <module name="historial" />
