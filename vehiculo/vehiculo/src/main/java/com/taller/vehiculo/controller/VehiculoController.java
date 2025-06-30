@@ -1,7 +1,5 @@
 package com.taller.vehiculo.controller;
 
-
-import com.taller.vehiculo.dto.RespuestaDTO;
 import com.taller.vehiculo.model.Vehiculo;
 import com.taller.vehiculo.service.VehiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +20,6 @@ public class VehiculoController {
         return vehiculoService.getAllVehiculos();
     }
 
-
-    @GetMapping("/{id}")
-    public RespuestaDTO getVehiculoById (@PathVariable Integer id) {
-        return vehiculoService.getClienteById(id);
-    }
 
     @PostMapping
     public Vehiculo createVehiculo(@RequestBody Vehiculo vehiculo) {
