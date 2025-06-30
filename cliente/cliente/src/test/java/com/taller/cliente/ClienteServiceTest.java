@@ -71,11 +71,8 @@ public class ClienteServiceTest {
     private Cliente crearCliente() {
         Cliente cliente = new Cliente();
         cliente.setIdCliente(1);
-        cliente.setPrNombre("Patricio");
-        cliente.setSegNombre("Javier");
-        cliente.setTerNombre("");
-        cliente.setApPaterno("Jimenez");
-        cliente.setApMaterno("Espinosa");
+        cliente.setNombres("Patricio Javier Alejandro");
+        cliente.setApellidos("Jimenez Espinosa");
         cliente.setCorreo("p@gmail.com");
         cliente.setTelefono(981329862);
 
