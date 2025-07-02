@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for seguimiento" enabled="true">
+      <profile name="Annotation profile for vehiculo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -12,8 +12,8 @@
         </processorPath>
         <module name="cliente" />
         <module name="disponibilidad" />
-        <module name="factura" />
         <module name="servicio" />
+        <module name="factura" />
         <module name="seguimiento" />
         <module name="auth" />
         <module name="historial" />
