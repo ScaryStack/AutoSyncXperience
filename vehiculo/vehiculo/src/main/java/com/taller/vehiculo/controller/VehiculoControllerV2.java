@@ -20,7 +20,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 
 @RestController
-@RequestMapping("/api/v3/vehiculos")
+@RequestMapping("/api/v3.2/vehiculos")
 public class VehiculoControllerV2 {
 
     @Autowired
